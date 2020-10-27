@@ -1,0 +1,17 @@
+{
+  "name": "rps",
+  "version": "1.0.0",
+  "description": "RockPaperScissors",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Johnson",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "*"
+  },
+  "bin": {
+    "rps": "./main.js"
+  }
+}
