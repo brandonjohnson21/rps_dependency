@@ -1,6 +1,10 @@
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
 let {move,fair} = yargs(hideBin(process.argv)).argv
+if (!move) {
+    console.error("You must use the --move option to play: rps --move=rock")
+    return -1;
+}
 class Game {
     constructor(PlayerMove,ComputerMove,fair) {
         this.move1 = PlayerMove;
